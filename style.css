@@ -1,0 +1,131 @@
+/*Adicionar fonte externa*/
+@font-face {
+    font-family: "Unbounded"; /*Nome da fonte*/
+    src: url(fonts/Unbounded-Bold.ttf) format("truetype"); /*local do arquidvo da fonte*/ /*format é o formato da fonte, ttf = truetype porem pode existir outros tipos*/
+    font-weight: 700; /*Peso da fonte*/
+    font-style: normal; /*Estilo da fonte (normal, itálico, etc...)*/
+    font-display: swap; /*swap serve para caso a fonte demorar carregar, mostra primeiro a fonte local pré definida*/
+}
+
+@font-face {
+    font-family: "Poppins-semibold";
+    src: url(fonts/Poppins-SemiBold.ttf) format("truetype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Poppins-regular";
+    src: url(fonts/Poppins-Regular.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/*Reset dos estilos pré definidos pelo navegador */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #0E1014;
+    color: #ffffff;
+}
+
+header img{
+    width: 280px;
+    height: 75px;
+    display: block;
+    margin: 15px 0 40px 180px;
+}
+
+h1{
+    font-family: "Unbounded", sans-serif;
+    font-size: 64px;
+    text-align: center;
+    width: 1100px;
+    margin: 0 auto;
+}
+
+h1 span{
+    color: #9747FF;
+}
+
+p{
+    font-family: "Poppins-regular", sans-serif;
+    font-size: 22px;
+    text-align: center;
+    width: 792px;
+    margin: 24px auto 40px auto;
+}
+
+a{
+    color: #ffffff;
+    font-family: "Poppins-semibold", sans-serif;
+    font-size: 24px;
+    text-decoration: none; /*Tirar o sublinhado do link*/
+    background-color: #9747FF;
+    display: block; /*Muda a forma de exibição de in-line para bloco e assim permite alterar a altura e a largura*/
+    width: 340px;
+    height: 66px;
+    text-align: center; /*Centralizar o texto horizontalmente*/
+    line-height: 66px; /*Centralizar o texto verticalmente (Utilizar o mesmo valor do height)*/
+    border-radius: 36px; /*Definir o raio da curvatura da borda do botão*/
+    margin: 0 auto;
+}
+
+/* Pseudo elemento que serve para acessar o estado de um elemento, como nesse caso identifica que esta passando com o mouse por cima do botão e altera a cor dele*/
+a:hover{ 
+    background-color: #8233E8;
+}
+
+img{
+    display: block;
+    width: 792;
+    height: 446;
+    margin: 40px auto 0 auto;
+}
+
+/* Adaptação para tablet */
+@media (max-width: 768px){ /* Utiliza um recurso chamado media query que faz algo a partir de uma medida exata */
+    header img{
+        margin: 65px 0 72px 60px
+    }
+
+    p{
+        width: 648px;;
+    }
+
+    main img{
+        width: 660px
+    }
+}
+
+/* Adaptação para celular */
+@media (max-width: 375px){
+    header img{
+        margin: 32px 0 60px 16px;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    p{
+        font-size: 20px;
+        width: 341px;
+    }
+
+    a{
+        font-size: 20px;
+        width: 251px;
+    }
+
+    main img{
+        width: 341px;
+        height: 230px;
+    }
+}
