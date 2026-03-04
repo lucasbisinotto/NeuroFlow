@@ -1,7 +1,7 @@
 /*Adicionar fonte externa*/
 @font-face {
     font-family: "Unbounded"; /*Nome da fonte*/
-    src: url(fonts/Unbounded-Bold.ttf) format("truetype"); /*local do arquidvo da fonte*/ /*format é o formato da fonte, ttf = truetype porem pode existir outros tipos*/
+    src: url(../fonts/Unbounded-Bold.ttf) format("truetype"); /*local do arquidvo da fonte*/ /*format é o formato da fonte, ttf = truetype porem pode existir outros tipos*/
     font-weight: 700; /*Peso da fonte*/
     font-style: normal; /*Estilo da fonte (normal, itálico, etc...)*/
     font-display: swap; /*swap serve para caso a fonte demorar carregar, mostra primeiro a fonte local pré definida*/
@@ -9,7 +9,7 @@
 
 @font-face {
     font-family: "Poppins-semibold";
-    src: url(fonts/Poppins-SemiBold.ttf) format("truetype");
+    src: url(../fonts/Poppins-SemiBold.ttf) format("truetype");
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -17,7 +17,7 @@
 
 @font-face {
     font-family: "Poppins-regular";
-    src: url(fonts/Poppins-Regular.ttf) format("truetype");
+    src: url(../fonts/Poppins-Regular.ttf) format("truetype");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
