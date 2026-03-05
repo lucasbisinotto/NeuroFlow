@@ -1,10 +1,10 @@
 /*Adicionar fonte externa*/
 @font-face {
-    font-family: "Unbounded"; /*Nome da fonte*/
-    src: url(../fonts/Unbounded-Bold.ttf) format("truetype"); /*local do arquidvo da fonte*/ /*format é o formato da fonte, ttf = truetype porem pode existir outros tipos*/
-    font-weight: 700; /*Peso da fonte*/
-    font-style: normal; /*Estilo da fonte (normal, itálico, etc...)*/
-    font-display: swap; /*swap serve para caso a fonte demorar carregar, mostra primeiro a fonte local pré definida*/
+    font-family: "Unbounded";
+    src: url(../fonts/Unbounded-Bold.ttf) format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -30,6 +30,7 @@
     padding: 0;
 }
 
+/* Configurações do site */
 body{
     background-color: #0E1014;
     color: #ffffff;
@@ -66,18 +67,17 @@ a{
     color: #ffffff;
     font-family: "Poppins-semibold", sans-serif;
     font-size: 24px;
-    text-decoration: none; /*Tirar o sublinhado do link*/
+    text-decoration: none;
     background-color: #9747FF;
-    display: block; /*Muda a forma de exibição de in-line para bloco e assim permite alterar a altura e a largura*/
+    display: block;
     width: 340px;
     height: 66px;
-    text-align: center; /*Centralizar o texto horizontalmente*/
-    line-height: 66px; /*Centralizar o texto verticalmente (Utilizar o mesmo valor do height)*/
-    border-radius: 36px; /*Definir o raio da curvatura da borda do botão*/
+    text-align: center;
+    line-height: 66px;
+    border-radius: 36px;
     margin: 0 auto;
 }
 
-/* Pseudo elemento que serve para acessar o estado de um elemento, como nesse caso identifica que esta passando com o mouse por cima do botão e altera a cor dele*/
 a:hover{ 
     background-color: #8233E8;
 }
@@ -90,7 +90,7 @@ img{
 }
 
 /* Adaptação para tablet */
-@media (max-width: 768px){ /* Utiliza um recurso chamado media query que faz algo a partir de uma medida exata */
+@media (max-width: 768px){
     header img{
         margin: 65px 0 72px 60px
     }
