@@ -90,30 +90,32 @@ img{
 }
 
 /* Adaptação para celular */
-@media (max-width: 1320px){
+@media (max-width: 440px){
     
     header img{
-        margin: 32px 0 60px 16px;
+        width: 224px;
+        height: 60px;
+        margin: 10px 0 30px 16px;
     }
 
     h1{
         font-size: 40px;
-        width: 700px;
+        width: 400px;
     }
 
     p{
-        font-size: 20px;
-        width: 341px;
+        font-size: 18px;
+        width: 400px;
     }
 
     a{
-        font-size: 20px;
+        font-size: 18px;
         width: 251px;
     }
 
-    main img{
-        width: 341px;
-        height: 230px;
+    img{
+        width: 396px;
+        height: 223px;
     }
 
 }
