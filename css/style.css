@@ -89,29 +89,16 @@ img{
     margin: 40px auto 0 auto;
 }
 
-/* Adaptação para tablet */
-@media (max-width: 768px){
-    header img{
-        margin: 65px 0 72px 60px
-    }
-
-    p{
-        width: 648px;;
-    }
-
-    main img{
-        width: 660px
-    }
-}
-
 /* Adaptação para celular */
-@media (max-width: 375px){
+@media (max-width: 1320px){
+    
     header img{
         margin: 32px 0 60px 16px;
     }
 
     h1{
         font-size: 40px;
+        width: 700px;
     }
 
     p{
@@ -128,4 +115,5 @@ img{
         width: 341px;
         height: 230px;
     }
+
 }
